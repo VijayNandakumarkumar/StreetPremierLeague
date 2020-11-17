@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/match_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/match"
+        android:textSize="32sp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/overs_text"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/overs"
+        android:textSize="22sp"
+        android:layout_marginTop="36dp"
+        android:layout_marginLeft="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/match_number"
+        android:layout_marginStart="36dp" />
+
+    <EditText
+        android:id="@+id/overs"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        tools:text="7"
+        android:textSize="22sp"
+        android:layout_marginTop="36dp"
+        android:layout_marginLeft="72dp"
+        app:layout_constraintStart_toEndOf="@id/overs_text"
+        app:layout_constraintTop_toBottomOf="@+id/match_number"
+        android:layout_marginStart="72dp" />
+
+    <TextView
+        android:id="@+id/team_one_player_count_text"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/team_1"
+        android:textSize="22sp"
+        android:layout_marginTop="36dp"
+        android:layout_marginLeft="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/overs_text"
+        android:layout_marginStart="36dp" />
+
+    <EditText
+        android:id="@+id/team_one_player_count"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        tools:text="7 "
+        android:textSize="22sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="72dp"
+        app:layout_constraintStart_toEndOf="@id/team_one_player_count_text"
+        app:layout_constraintTop_toBottomOf="@+id/overs"
+        android:layout_marginStart="72dp" />
+
+    <TextView
+        android:id="@+id/team_two_player_count_text"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/team_2"
+        android:textSize="22sp"
+        android:layout_marginTop="36dp"
+        android:layout_marginLeft="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team_one_player_count_text"
+        android:layout_marginStart="36dp" />
+
+    <EditText
+        android:id="@+id/team_two_player_count"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="7 "
+        android:textSize="22sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="72dp"
+        app:layout_constraintStart_toEndOf="@id/team_two_player_count_text"
+        app:layout_constraintTop_toBottomOf="@+id/team_one_player_count"
+        android:layout_marginStart="72dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="100dp"
+        android:text="@string/start_match"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

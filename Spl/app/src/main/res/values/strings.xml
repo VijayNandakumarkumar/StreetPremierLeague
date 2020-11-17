@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Street Premier league</string>
+    <string name="create_match_btn">Create match</string>
+    <string name="profile_btn">View my profile</string>
+    <string name="all_profile_btn">All profile</string>
+    <string name="sign_out_btn">Sign out</string>
+    <string name="player_number_text">Player Number</string>
+    <string name="player_matches_text">Matches Played</string>
+    <string name="player_runs_text">Total Runs</string>
+    <string name="player_wickets_taken_text">Wickets Taken</string>
+    <string name="player_strike_rate_text">Strike Rate</string>
+    <string name="match">Match</string>
+    <string name="overs">Overs</string>
+    <string name="team_1">Team 1</string>
+    <string name="team_2">Team 2</string>
+    <string name="start_match">Start Match</string>
+
+</resources>

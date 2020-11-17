@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/playerDisplayPhotoCard"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="36dp">
+    <ImageView
+        android:id="@+id/playerDisplayPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_launcher_foreground"
+        android:scaleType="centerCrop"/>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/playerName"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        tools:text="Vijaykumar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/playerDisplayPhotoCard"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/playerNumberText"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/player_number_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/playerDisplayPhotoCard"
+        tools:text="Player Number :" />
+
+    <EditText
+        android:id="@+id/playerNumber"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@id/playerNumberText"
+        app:layout_constraintTop_toBottomOf="@id/playerName"
+        tools:text="4"/>
+
+    <TextView
+        android:id="@+id/playerTotalMatchesText"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/playerNumberText"
+        tools:text="Matches Played :"
+        android:text="@string/player_matches_text"/>
+
+    <TextView
+        android:id="@+id/playerTotalMatches"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@id/playerTotalMatchesText"
+        app:layout_constraintTop_toBottomOf="@id/playerNumber"
+        tools:text="100"
+        android:text="0"/>
+
+    <TextView
+        android:id="@+id/playerTotalRunsText"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/playerTotalMatchesText"
+        tools:text="Total Runs :"
+        android:text="@string/player_runs_text"/>
+
+    <TextView
+        android:id="@+id/playerTotalRuns"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@id/playerTotalRunsText"
+        app:layout_constraintTop_toBottomOf="@id/playerTotalMatches"
+        tools:text="1000"
+        android:text="0"/>
+
+    <TextView
+        android:id="@+id/playerTotalWicktesText"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/playerTotalRunsText"
+        tools:text="Wickets Taken :"
+        android:text="@string/player_wickets_taken_text"/>
+
+    <TextView
+        android:id="@+id/playerTotalWicktes"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@id/playerTotalWicktesText"
+        app:layout_constraintTop_toBottomOf="@id/playerTotalRuns"
+        tools:text="1000"
+        android:text="0"/>
+
+    <TextView
+        android:id="@+id/playerStrikeRateText"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/playerTotalWicktesText"
+        tools:text="Strike Rate :"
+        android:text="@string/player_strike_rate_text"/>
+
+    <TextView
+        android:id="@+id/playerStrikeRate"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@id/playerStrikeRateText"
+        app:layout_constraintTop_toBottomOf="@id/playerTotalWicktes"
+        tools:text="1000"
+        android:text="0"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

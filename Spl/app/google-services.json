@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "305733341601",
+    "firebase_url": "https://street-premier-league.firebaseio.com",
+    "project_id": "street-premier-league",
+    "storage_bucket": "street-premier-league.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:305733341601:android:0277a7a3b8d7c6bdeebbe0",
+        "android_client_info": {
+          "package_name": "com.example.spl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "305733341601-23errena86l2c36n8pqpd05kngv67kl8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtcBAriqiaxsSrscjkrjgk-9L7__4qJgM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "305733341601-23errena86l2c36n8pqpd05kngv67kl8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
